@@ -82,7 +82,7 @@ function rand(min, max) {
 // 		let co = rand(0, 3);
 // 		hanabi.push(new Hanabi(x << 8, y << 8, co, 0, -800, 4));
 // 	}
-document.getElementById('can').addEventListener('touchstart', (e) => {
+document.getElementById('can').addEventListener('click', (e) => {
 	if (e.keyCode == 97 || e.keyCode == 98 || e.keyCode == 99 || e.keyCode == 32) {
 		let s;
 		if (e.keyCode == 97) s = 0;
