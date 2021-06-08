@@ -68,7 +68,7 @@ function rand(min, max) {
 }
 
 //キーボードが押された時に呼ばれる
-document.onclick = function (e) {
+document.touchstart = function (e) {
 	if (e.keyCode == 97 || e.keyCode == 98 || e.keyCode == 99 || e.keyCode == 32) {
 		let s;
 		if (e.keyCode == 97) s = 0;
