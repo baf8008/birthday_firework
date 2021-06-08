@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birthday fireworks</title>
-</head>
-<body>
-  <script src="fireworks.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Birthday fireworks</title>
+		<style>
+			p {
+				margin: 0;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 3%;
+				bottom: 0;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="can"></canvas>
+		<div
+			id="birthday"
+			style="
+				color: aqua;
+				text-align: center;
+				font-size: 23px;
+				font-weight: bold;
+				font-family: 'Marker Felt', sans-serif;
+				margin: 0;
+			"
+		></div>
+		<button id="click" style="display: flex; margin: 0 auto; padding: 10px 20px; border-radius: 30px">
+			Please Click
+		</button>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script> -->
+		<script src="fireworks.js"></script>
+		<script src="main.js"></script>
+	</body>
 </html>
