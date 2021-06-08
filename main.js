@@ -1,13 +1,17 @@
 const SCREEN_SIZE_W = 360;
 const SCREEN_SIZE_H = 600;
 
-document.getElementById('click').addEventListener('click', () => {
-	const birthday_string = document.createElement('p');
-	birthday_string.textContent = '.*･ﾟ☆Happy Birthday☆ﾟ･*.';
+document.getElementById('click').addEventListener(
+	'click',
+	() => {
+		const birthday_string = document.createElement('p');
+		birthday_string.textContent = '.*･ﾟ☆Happy Birthday☆ﾟ･*.';
 
-	const div = document.getElementById('birthday');
-	div.appendChild(birthday_string);
-},{ once: true });
+		const div = document.getElementById('birthday');
+		div.appendChild(birthday_string);
+	},
+	{ once: true }
+);
 
 let can = document.getElementById('can');
 let con = can.getContext('2d');
@@ -64,7 +68,7 @@ function rand(min, max) {
 }
 
 //キーボードが押された時に呼ばれる
-document.onkeydown = function (e) {
+document.onclick = function (e) {
 	if (e.keyCode == 97 || e.keyCode == 98 || e.keyCode == 99 || e.keyCode == 32) {
 		let s;
 		if (e.keyCode == 97) s = 0;
